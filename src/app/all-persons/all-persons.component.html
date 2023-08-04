@@ -1,0 +1,30 @@
+<div class="person-list">
+<div *ngIf="showList && persons.length > 0">
+  <h2>List of Persons:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <!-- <th>Actions</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <td>{{ person.id }}</td>
+        <td>{{ person.firstName }} {{ person.lastName }}</td>
+        <td>{{ person.personAge }}</td>
+        <td>{{ person.personGender }}</td>
+        <td>{{ person.personEmail }}</td>
+        <td>
+          <button class="delete-btn" (click)="deletePersonById(person.id)">Delete</button>
+          <button class="details-btn" (click)="moreDetailsById(person.id)">Details</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>

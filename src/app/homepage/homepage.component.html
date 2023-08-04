@@ -1,0 +1,54 @@
+
+<div class="container">
+  <h1>Welcome to the Library Application</h1>
+  <p>Hello and welcome! This is a simple library application to manage persons.</p>
+
+  <div class="person-form">
+    <input type="text" placeholder="First Name" [(ngModel)]="newPerson.firstName">
+    <input type="text" placeholder="Last Name" [(ngModel)]="newPerson.lastName">
+    <input type="number" placeholder="Age" [(ngModel)]="newPerson.personAge">
+    <input type="text" placeholder="Gender" [(ngModel)]="newPerson.personGender">
+    <input type="email" placeholder="Email" [(ngModel)]="newPerson.personEmail">
+    <button (click)="createPerson()">Add Person</button>
+  </div>
+
+    <button class="toggle-btn" (click)="toogleListVisibility()" [disabled]="isFetching">
+      <span *ngIf="isFetching; else showAllPersons">Loading...</span>
+      <ng-template #showAllPersons>See All Persons</ng-template>
+    </button>
+    <!-- <div *ngIf="showList && persons.length > 0">
+      <h2>List of Persons:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Actions</th> -->
+         <!-- </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let person of persons">
+            <td>{{ person.id }}</td>
+            <td>{{ person.firstName }} {{ person.lastName }}</td>
+            <td>{{ person.personAge }}</td>
+            <td>{{ person.personGender }}</td>
+            <td>{{ person.personEmail }}</td>
+            <td>
+              <button class="delete-btn" (click)="deletePersonById(person.id)">Delete</button>
+              <button class="details-btn" (click)="moreDetailsById(person.id)">Details</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+
+    <!-- <div *ngIf="showList && persons.length === 0">
+      <p>No persons found.</p>
+    </div> -->
+
+    <!-- <div *ngIf="showNotFoundMessage">
+      <p class="not-found">Person not found.</p>
+    </div> -->
