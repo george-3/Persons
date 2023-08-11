@@ -1,0 +1,18 @@
+<div class="app-container">
+<header> 
+  <div *ngIf="showHomeButton()" class="home-link" (click)="goToHome()">
+    Home
+  </div>
+  <div class="header-content">
+  <img src="../assets/book 4.png" alt="Persons"><h4>Library</h4>
+  </div>
+  
+  </header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  By: George Kariuki.
+</footer>
+</div>   

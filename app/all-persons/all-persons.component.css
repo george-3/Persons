@@ -1,0 +1,104 @@
+.toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .table {
+  margin-left: 4000px;
+} */
+
+.details-btn {
+  background-color: #28a745;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #007bff;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.toggle-btn {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.person-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.person-search input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 0;
+}
+
+.person-search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.person-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.person-details h2 {
+  margin-top: 0;
+}
+
+.person-details p {
+  margin-bottom: 5px;
+}
+
+.loading-message {
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+}
+
+.not-found-message {
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+  color: red;
+}

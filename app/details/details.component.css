@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 5px 0;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.not-found {
+  text-align: center;
+  color: #f00;
+}

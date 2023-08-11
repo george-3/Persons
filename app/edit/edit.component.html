@@ -1,0 +1,15 @@
+<div *ngIf="person">
+  <h2>Edit Person:</h2>
+  <p><strong>Name:</strong> {{ person.firstName }} {{ person.lastName }}</p>
+
+  <input type="text" [(ngModel)]="person.firstName" placeholder="First Name">
+  <input type="text" [(ngModel)]="person.lastName" placeholder="Last Name">
+  <input type="text" [(ngModel)]="person.personAge" placeholder="Age">
+  <input type="text" [(ngModel)]="person.personGender" placeholder="Gender">
+  <input type="text" [(ngModel)]="person.personEmail" placeholder="Email">
+  <br>
+
+  <button (click)="saveChanges()">Save Changes</button>
+</div>
+
+<br>

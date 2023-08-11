@@ -1,0 +1,16 @@
+<div class="container" *ngIf="personDetails">
+  <h2>More Details</h2>
+  <!-- <p><strong>ID:</strong> {{ personDetails.id }}</p> -->
+  <p><strong>Name:</strong> {{ personDetails.firstName }} {{ personDetails.lastName }}</p>
+  <p><strong>Age:</strong> {{ personDetails.personAge }}</p>
+  <p><strong>Gender:</strong> {{ personDetails.personGender }}</p>
+  <p><strong>Email:</strong> {{ personDetails.personEmail }}</p>
+</div>
+
+<div class="loading" *ngIf="!personDetails && !isLoading">
+  <p>Loading...</p>
+</div>
+
+<div class="not-found" *ngIf="isLoading">
+  <p>Person not found.</p>
+</div>
